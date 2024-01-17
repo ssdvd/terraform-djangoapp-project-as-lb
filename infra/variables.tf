@@ -12,10 +12,6 @@ variable "env" {
   type = string
 }
 
-variable "sg_env" {
-  type = string
-}
-
 variable "nomeGrupo" {
   type = string
 }
