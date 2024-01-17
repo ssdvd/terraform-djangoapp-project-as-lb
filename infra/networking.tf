@@ -1,8 +1,8 @@
-resource "aws_default_subnet" "subnet-1" {
+resource "aws_default_subnet" "subnet_1" {
   availability_zone = "${var.regiao_aws}a"
 }
 
-resource "aws_default_subnet" "subnet-2" {
+resource "aws_default_subnet" "subnet_2" {
   availability_zone = "${var.regiao_aws}b"
 }
 

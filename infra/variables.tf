@@ -8,11 +8,15 @@ variable "instancia" {
   type = string
 }
 
+variable "sg" {
+  type = string
+}
+
 variable "env" {
   type = string
 }
 
-variable "nomeGrupo" {
+variable "asgname" {
   type = string
 }
 

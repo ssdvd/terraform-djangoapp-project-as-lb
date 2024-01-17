@@ -1,6 +1,6 @@
-resource "aws_security_group" "access_geral" {
-  name        = "access_geral_${var.env}"
-  description = "Acesso Geral"
+resource "aws_security_group" "access_restrict" {
+  name        = var.sg
+  description = "Access Restrict"
 
   ingress {
     from_port   = 22

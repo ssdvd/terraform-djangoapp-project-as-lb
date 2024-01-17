@@ -21,6 +21,6 @@ resource "aws_launch_template" "tp_djangoapp" {
   tags = {
     Name = "Terraform Ansible DjangoApp"
   }
-  security_group_names = [aws_security_group.access_geral.id]
+  security_group_names = [var.sg]
   user_data            = var.producao ? filebase64("ansible.sh") : ""
 }
